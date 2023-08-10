@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,300&family=Oswald:wght@400;500;600;700&display=swap');
+
+h1,h2,h3,
+h4,h5,h6{
+    font-family: 'Oswald', sans-serif;
+}
+/*=====font family end======*/
+
+/* =====common css start=====*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+ul,ol{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+:root{
+    --color_1: #0872b9;
+    --color_2: #5bc5f3;
+}
+/*=====common css end======*/
+
+/* =====welcomre part start======*/
+.welcomre_part{
+    background: var(--color_1);
+}
+.welcome_icon li a{
+    color: #f1f1f1;
+    transition: .4s;
+}
+.welcome_icon li a:hover{
+    color: #353535;
+}
+/* =====welcomre part end======*/
+
+/* =====nav part start======*/
+.nav-link:hover{
+    color: var(--color_1);
+}
+/* =====nav part end======*/
+
+/* =====hero part start======*/
+.hero_part{
+    background: url(../images/hero.png) no-repeat center;
+    background-size: cover;
+    padding: 90px 0;
+}
+.hero_part .btn{
+    border-radius: 0;
+    gap: 20px;
+    font-size: 14px;
+    font-weight: 500;
+
+}
+.hero_part .btn:hover{
+    background: var(--color_1);
+    color: #f1f1f1;
+    border: #0872b9;  
+}
+.hero_con p{
+    line-height: 30px;
+}
+/* =====hero part end======*/
+
+/* =====About part start======*/
+.about_part{
+    padding-top: 60px;
+}
+.about_head{
+    padding-bottom: 40px;
+    text-transform: uppercase;
+    line-height: 0;
+}
+.about_con p{
+    line-height: 25px;
+}
+/* =====About part end======*/
+
+/* =====About part start======*/
+.srevice_con{
+    background: #f1f1f1;
+    padding: 20px;
+    position: relative;
+    transition: .4s;
+}
+.srevice_con:hover{
+    box-shadow: 0px 0px 6px 6px rgba(0,0,0,0.2);
+}
+.service_icon{
+    height: 80px;
+    width: 80px;
+    background: #f1f1f1;
+    border-radius: 50%;
+    margin: 2px;
+    border: 8px double #ffffff;
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .4s;
+}
+.srevice_con:hover .service_icon{
+    background: var(--color_2);
+}
+/* =====About part end======*/
+
+/* =====Portfolio part start======*/
+.port_img{
+    position: relative;
+    overflow: hidden;
+}
+
+.port_img_overlay{
+    height: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+}
+.port_img:hover .port_img_overlay{
+    height: 100%;
+    opacity: 1;
+    visibility: visible;
+}
+.port_img_overlay a{
+    height: 40px;
+    width: 40px;
+    background: var(--color_2);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+}
+/* =====Portfolio part end====== */
+
+/* =====Team part start======*/
+.team_img{
+    position: relative;
+    overflow: hidden;
+    transition: .4s;
+}
+.team_con h4{
+    transition: .4s;
+}
+.team_img:hover ~ h4{
+    color: var(--color_2);
+}
+.team_img:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.team_img_overlay{
+    height: 100%;
+    width: 0;
+    background: rgba(0,0,0,0.6);
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+}
+.team_img:hover .team_img_overlay{
+    opacity: 1;
+    visibility: visible;
+    width: 33.33%;
+} 
+.team_img_overlay ul li a{
+    display: block;
+    height: 40px;
+    width: 40px;
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    margin: 15px 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+    
+
+}
+.team_img_overlay ul li a:hover{
+    background: var(--color_2);
+    border: #5bc5f3;
+}
+/* =====Team part end====== */
+
+/* =====Tistimonial part start======*/
+.testi_con{
+    background: #f1f1f1;
+    padding: 20px;
+    margin-top: 40px;
+    position: relative;
+}
+.testi_shape{
+    height: 40px;
+    width: 40px;
+    margin-top: 0;
+    background: #f1f1f1;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    z-index: -1;
+}
+.testi_icon{
+    color: var(--color_2);
+}
+/* =====Tistimonial part end====== */
+
+/* =====Contact part start======*/
+.footer_part{
+    background: #353535;
+    color: #f1f1f1;
+    margin-top: 60px;
+    padding: 20px 0;
+}
+.contact_icon{
+    height: 40px;
+    width: 40px;
+    background: var(--color_2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.contact_con{
+    font-size: 14px;
+}
+.footer_link li a{
+    color: #f1f1f1;
+    padding: 5px 0;
+    display: block;
+    transition: .4s;
+}
+.footer_link li a:hover{
+    color: var(--color_2);
+}
+/* =====Contact part end====== */
+
+/* =====Copyright part start====== */
+.copyright{
+    background: #555555;
+    padding: 15px 0;
+}
+.copy_con a{
+    color: var(--color_2);
+}
+/* =====Copyright part end====== */
